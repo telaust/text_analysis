@@ -1,0 +1,436 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.pbar {
+  margin: 20px;
+  align-items: center;  
+  /*padding: 10px;*/
+  width: 120px;
+  height: 120px;
+  
+}
+
+#buttonBlock {
+  width: 100%;
+  text-align: center;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.pos_hint:hover::after { 
+  content: attr(data-title); 
+ }
+
+#pos svg {
+  padding-top: 100px;
+  height: auto;
+  color: #000000;
+  background: #ffffff;
+  font-family: Arial;
+  direction: ltr;
+  
+}
+
+#ner svg {
+  width:100%;
+  overflow: scroll;
+  max-height: 800px;
+  position: relative;
+
+  
+  padding-top: 100px;
+  height: auto;
+  color: #000000;
+  background: #ffffff;
+  font-family: Arial;
+  direction: ltr;
+}
+
+#pbar {
+  margin: 50%;
+}
+
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.centerize {
+  width: 400px;
+  height: 100px;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.card1 {
+  width: 400px;
+  height: 500px;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  /*margin: auto;*/
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.inputCard {
+  width: 400px;
+  height: 100px;
+
+  /* position: static; */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+  margin-top: 50px;
+  
+}
+
+.entities {
+  overflow: auto;
+  top: 20px;
+  position: absolute;
+}
+
+
+
+.content {
+
+  display: inline-block;
+  padding: 10px;
+}
+
+h2{
+  color: green;
+  text-align: center;
+}
+
+.container{ 
+  justify-content: space-around;
+  margin: 0 auto;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15%; 
+}
+
+.cardName {
+  /*background: green;*/
+  padding-top: 5px;
+  font: 1.1em "Fira Sans", sans-serif;
+  text-align: center;
+}
+
+.paperItem{
+  background: black;
+  /*z-index: 5;*/
+  width: 48%;
+  height: 400px;
+  margin-top: 30px;
+  color: white;
+  z-index: 3;
+  padding: 15px;
+  box-sizing: border-box;
+  
+}
+
+.contentBlock , #ner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 80%;
+}
+
+.paperItem:nth-child(5) {
+  overflow: scroll;
+}
+
+.paperItem:last-child {
+  width:100%;
+  overflow: scroll;
+  max-height: 800px;
+  position: relative;
+  
+}
+.paperItem:last-child .cardName {
+  position: sticky;
+  top: 15px;
+  left: 15px;
+  padding-bottom: 10px;
+}
+
+
+/* Import the Google Font 'Lato' */
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+/* Container styles */
+body {
+  /* background-color: #fff; */
+  color: #333;
+  font-family: "Fira Sans", sans-serif;
+  /* font: 1.1em "Fira Sans", sans-serif; */
+  background-image: url("background_img.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+
+.container {
+  padding: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.chart {
+  position: relative;
+  display: inline-block;
+  color: #999;
+  font-size: 20px;
+  text-align: center;
+}
+
+.chart figcaption {
+  padding: 50px 25px;
+  width: 100px;
+  height: 50px;
+  border: 20px solid #f0f0f0;
+  border-radius: 100px;
+  line-height: 50px;
+}
+
+.chart img {
+  position: absolute;
+  max-width: 100px;
+  max-height: 100px;
+  background: white;
+}
+/* END Container styles */
+
+/* Colors for the circles and positions for the graphics */
+
+
+.html + svg .outer {
+  stroke: #e34f26;
+}
+
+.css {
+  top: 55px;
+  left: 48px;
+}
+
+.css + svg .outer {
+  stroke: #0d84ce;
+}
+
+.pbar text{
+  margin: 20px;
+  
+  /* align-items: center;   */
+  /*padding: 10px;
+  width: 100px;
+  height: 100px; */
+  
+}
+
+.javascript {
+  max-width: 90px;
+  max-height: 90px;
+  top: 45px;
+  left: 45px;
+}
+
+.javascript + svg .outer {
+  stroke: #f0e040;
+}
+
+.node {
+  width: 200px;
+  height: 200px;
+  top: 45px;
+  left: 45px;
+}
+
+.MuiPaper-elevation1 {
+  box-shadow: 0px 0px 12px 2px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%) !important;
+}
+.node + svg .outer {
+  stroke: #83cd29;
+}
+
+
+
+textarea {
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  font-size: 24px;
+  box-sizing: border-box;
+  padding: 10px;
+  font-family: "Fira-Sans", sans-serif;
+  resize: none;
+}
+
+.outer {
+  fill: transparent;
+  stroke: #333;
+  stroke-width: 20;
+  stroke-dasharray: 534;
+  transition: stroke-dashoffset 1s;
+  -webkit-animation-play-state: running;
+  
+  /* firefox bug fix - won't rotate at 90deg angles */
+  -moz-transform: rotate(-89deg) translateX(-190px);
+}
+
+.chart:hover .outer {
+  stroke-dashoffset: 534 !important;
+  -webkit-animation-play-state: paused;
+}
+/* END Circle colors and graphic positions */
+
+
+/* Set the initial values for the animation */
+.chart[data-percent='100'] .outer {
+  stroke-dashoffset: 0;
+  -webkit-animation: show100 2s;
+  animation: show100 2s;
+}
+
+.chart[data-percent='75'] .outer {
+  stroke-dashoffset: 133;
+  -webkit-animation: show75 2s;
+  animation: show75 2s;
+}
+
+.chart[data-percent='50'] .outer {
+  stroke-dashoffset: 267;
+  -webkit-animation: show50 2s;
+  animation: show50 2s;
+}
+
+.chart[data-percent='25'] .outer {
+  stroke-dashoffset: 401;
+  -webkit-animation: show25 2s;
+  animation: show25 2s;
+}
+/* END set initial animation values */
+
+/* Keyframes for the initial animation */
+@-webkit-keyframes show100 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes show100 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes show75 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 134;
+  }
+}
+
+@keyframes show75 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 124;
+  }
+}
+
+@-webkit-keyframes show50 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 267;
+  }
+}
+
+@keyframes show50 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 267;
+  }
+}
+
+@-webkit-keyframes show25 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 401;
+  }
+}
+
+@keyframes show25 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 401;
+  }
+}
+/* END Keyframes for the initial animation */
